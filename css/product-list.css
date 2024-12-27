@@ -17,98 +17,83 @@ a {
     color: inherit;
 }
 
-/* Top Banner */
+/* Header style */
 .top-banner {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    background-color: var(--space-cadet);
-    color: var(--platinum);
+    background-color: #2c3e50;
+    color: #e5e5e5;
     padding: 10px 20px;
     font-size: 14px;
     letter-spacing: 1px;
-    font-weight: lighter;
-}
+  }
 
-.top-banner>p {
-    margin-left: auto;
-    font-weight: normal;
-}
+  .top-banner p {
+    margin: 0;
+    text-align: center;
+  }
 
-.top-banner a {
-    color: var(--platinum);
+  .top-banner a {
+    color: #e5e5e5;
+    text-decoration: underline;
     font-weight: bold;
-}
+  }
 
-/* Header */
-.header {
+  .top-banner img {
+    vertical-align: middle;
+  }
+
+  /* Header style */
+  header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    background-color: var(--platinum);
-    padding: 35px 100px 20px;
+    align-items: center;
+    background-color: #e5e5e5;
+    padding: 20px 100px;
     border-bottom: 1px solid #ccc;
-}
+  }
 
+  header img {
+    max-height: 50px;
+  }
 
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--space-cadet);
-}
-
-.nav-links ul {
+  nav ul {
     list-style: none;
     display: flex;
     gap: 40px;
-}
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
 
-.nav-links ul li a {
-    font-size: 18px;
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-
-.nav-links ul li a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.search {
+  nav ul li {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+  }
 
-.search-bar {
-    display: flex;
-    border-radius: 5px;
-    background-color: var(--timberwolf);
-    height: 35px;
-}
+  nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: normal;
+    transition: all 0.2s ease-in;
+  }
 
-.icon {
-    width: 55px;
-    padding: 5px;
-    text-align: center;
-    font-size: 20px;
-}
+  nav ul li img {
+    cursor: pointer;
+  }
 
-.search-bar input {
-    font-size: 10pt;
-    border: 0px;
-    background-color: var(--timberwolf);
-    text-align: center;
-    font-weight: lighter;
-    width: 200px;
-    border-radius: 5px;
-}
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: #cf5c36;
+  }
 
-
-.search a {
-    margin-left: 10px;
-    font-size: 20px;
-}
+  nav ul li:hover {
+    background-color: aliceblue;
+    border-radius: 22px;
+    padding: 8px 15px;
+  }
 
 .container {
     display: block;
