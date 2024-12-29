@@ -85,6 +85,11 @@ header img {
     gap: 40px;
 }
 
+.nav-links .active {
+    text-decoration: underline;
+    color: var(--flame);
+}
+
 .nav-links ul li a {
     font-size: 18px;
     font-weight: normal;
@@ -135,6 +140,45 @@ nav ul:hover {
 .search a {
     margin-left: 10px;
     font-size: 20px;
+}
+
+
+/* Welcoming */
+.welcoming {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    padding: 20px 100px;
+    background-color: var(--platinum);
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--flame);
+}
+
+.breadcrumb span {
+    color: var(--space-cadet);
+}
+
+/* Welcome bar */
+.welcome-bar {
+    padding: 10px 100px;
+    background-color: var(--platinum);
+}
+
+.user-name {
+    color: var(--flame);
+    font-weight: bold;
 }
 
 /* Footer */
@@ -201,6 +245,7 @@ nav ul:hover {
     flex: 1;
     background: var(--space-cadet);
     color: var(--platinum);
+    border-color: var(--space-cadet);
 }
 
 .subscribe-box button {
