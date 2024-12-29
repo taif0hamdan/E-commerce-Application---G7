@@ -11,40 +11,42 @@
 
 <body>
   <!-- Top Banner -->
-
-
-  <div class="">
-    <div class="row mx-auto text-center">
-      <div class="col-12">
-        <div class="top-banner">
-          <p>
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF
-            50%!
-            <a style="text-decoration: underline" href="#">ShopNow</a>
-          </p>
-          <p>
-            <a style="font-weight: normal" href="#">English</a>
-            <img src="../assets/down-arrow.png" width="10px" alt="arrowImage" />
-          </p>
-        </div>
-      </div>
-    </div>
-
+  <div class="top-banner">
+    <p>
+      Summer Sale For All Swim Suits And Free Express Delivery - OFF
+      50%!
+      <a style="text-decoration: underline" href="#">ShopNow</a>
+    </p>
+    <p>
+      <a style="font-weight: normal" href="#">English</a>
+      <img src="../assets/down-arrow.png" width="10px" alt="arrowImage" />
+    </p>
   </div>
 
   <!-- Header -->
-  <header>
-    <img src="../assets/logo.png" alt="Website logo" width="150" height="50">
-    <nav>
+  <header class="header">
+    <div class="logo">
+      <img src="../assets/light-logo.png" alt="logo">
+    </div>
+    <nav class="nav-links">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-list.html">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><img src="../assets/shopping cart icon.png" alt="Shopping cart icon" width="25" height="25"></li>
-        <li><img src="../assets/User account icon.png" alt="User account icon" width="25" height="25"></li>
+        <li><a href="#">Sign Up</a></li>
       </ul>
     </nav>
+    <div class="search">
+      <div class="search-bar">
+        <input type="text" placeholder="What are you looking for?" />
+        <div class="icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <a href="shopping-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+    </div>
   </header>
 
   <div class="container">
@@ -487,7 +489,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
-        <img src="../assets/logo.png" alt="website logo" width="150" height="50">
+        <img src="../assets/dark-logo.png" alt="website logo">
         <p>Shop smart, buy better</p>
         <p>get started below!</p>
         <div class="subscribe-box">
@@ -507,17 +509,17 @@
         <ul>
           <li><a href="#">My Account</a></li>
           <li><a href="#">Login / Register</a></li>
-          <li><a href="#">Cart</a></li>
-          <li><a href="#">Shop</a></li>
+          <li><a href="shopping-cart.html">Cart</a></li>
+          <li><a href="product-list.html">Shop</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Quick Link</h3>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="product-list.html">Products</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-column">
