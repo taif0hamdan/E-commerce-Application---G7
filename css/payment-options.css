@@ -1,0 +1,239 @@
+/* Payment Header */
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.add-payment-btn {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.add-payment-btn:hover {
+    background-color: #d63939;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.payment-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.payment-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.payment-card.default {
+    border-color: var(--primary-color);
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.card-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-type i {
+    font-size: 24px;
+}
+
+.card-type .fa-cc-visa {
+    color: #1a1f71;
+}
+
+.card-type .fa-cc-mastercard {
+    color: #eb001b;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.set-default-btn {
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: var(--secondary-color);
+}
+
+.delete-btn {
+    background-color: #fff;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.set-default-btn {
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.edit-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.delete-btn:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.set-default-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.payment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.payment-form .form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add-payment-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card-info {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .card-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-actions button {
+        width: 100%;
+    }
+
+    .payment-form .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .modal-content {
+        margin: 20px;
+        padding: 20px;
+    }
+}
