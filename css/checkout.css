@@ -86,9 +86,7 @@ select {
   cursor: pointer;
 }
 
-.order-summary button:hover {
-  background-color: darken(var(--flame), 10%);
-}
+
 
 .checkbox {
   display: flex;
@@ -110,4 +108,71 @@ td img {
 
 .place_order {
   margin-top: 20px;
+}
+.payment-methods label {
+    display: flex;
+    margin: 2px;
+    padding: 0;
+    color: var(--space-cadet);
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    
+  }
+  .payment-methods input{
+    padding: 7px;
+    margin-right: 2rem;
+    
+    width: min-content;
+    display: flex;
+    align-content: space-between;
+    appearance: none;
+
+    background-color: var(--flame);
+    
+    color: var(--space-cadet);
+    
+    border-color: var(--flame);
+    border-radius: 10px;
+    transform: translate(10px, -20%);
+  }
+  
+  .payment-methods{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+    width: 100%;
+    height: min-content;
+}
+
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+  input[type="radio"]:focus {
+    outline: max(2px,3px) solid currentColor;
+    outline-offset: max(2.5px, 3px);
+  }
+  .card-details {
+    display: none;
+    margin-top: 20px;
+}
+
+.card-details input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+
+.expiry-cvv {
+    display: flex;
+    gap: 20px;
+}
+
+.expiry-cvv input {
+    width: calc(100% - 10px);
+}
+.fa-money-bill , .fa-credit-card{
+    right: 0;
+    margin-left: 20px;
+    margin-bottom: 7px;
 }
