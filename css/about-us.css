@@ -1,0 +1,237 @@
+@import 'common.css';
+
+.container {
+    display: block;
+    padding-left: 80px;
+}
+
+/* Our Story Section */
+.our-story {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.story-content h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--space-cadet);
+    padding-bottom: 10px;
+}
+
+.story-content p {
+    font-size: large;
+    color: var(--space-cadet);
+    padding-top: 20px;
+}
+
+.story-image img {
+    border-radius: 10px;
+    max-height: 40rem;
+}
+
+/* Stats Section */
+
+.outline-circle {
+    background: var(--timberwolf);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.inline-circle {
+    background: var(--space-cadet);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 12px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 150px;
+    align-items: center;
+}
+
+.stat-box {
+    background: var(--platinum);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0 10px;
+    border: 1px solid var(--space-cadet);
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.stat-box.highlight {
+    background: var(--flame);
+    color: #fff;
+    border: 1px solid var(--flame);
+    box-shadow: 0px 2px 8px #88888879;
+}
+
+.stat-box.highlight i {
+    color: var(--space-cadet);
+}
+
+.stat-box.highlight .inline-circle {
+    background-color: var(--timberwolf);
+}
+
+.stat-box.highlight .outline-circle {
+    background-color: #e6e8e69e;
+}
+
+.stat-box.highlight span {
+    color: #fff;
+}
+
+.stat-box i {
+    font-size: 24px;
+    display: block;
+    padding-top: 25px;
+    color: var(--platinum);
+}
+
+.stat-box p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.stat-box span {
+    font-size: 11px;
+    color: #555;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-member {
+    text-align: left;
+    margin: 0 10px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+.team-member-image-holder {
+    text-align: center;
+    background-color: var(--timberwolf);
+    height: 300px;
+    width: 300px;
+}
+
+.team-member-image-holder img {
+    border-radius: 10%;
+    margin-top: 20px;
+    height: -webkit-fill-available;
+}
+
+.team-member h1 {
+    margin: 10px 0 5px;
+    font-size: x-large;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.team-social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    gap: 5px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-dot-navigation {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot:hover {
+    background: #888;
+}
+
+.dot.active {
+    border: 2px solid #888;
+    background: var(--flame);
+    width: 14px;
+    height: 14px;
+    transition: background 0.3s ease, width 0.2s, height 0.2s;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.feature {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-container {
+    width: 70px;
+    height: 70px;
+    background: var(--space-cadet);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.icon-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    top: -5;
+    left: -5;
+    z-index: -1;
+}
+
+.icon-container i {
+    font-size: 24px;
+    color: var(--platinum);
+}
