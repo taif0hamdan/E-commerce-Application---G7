@@ -346,6 +346,7 @@ section {
   border: 1px solid #ddd;
   border-radius: 8px;
   transition: all ease-in-out 0.4s;
+  margin: 10px
 }
 
 .category-item i {
@@ -791,13 +792,6 @@ section {
     display: none;
   }
 
-  .arrival-container {
-    grid-template-columns: 1fr;
-  }
-
-  .small-items {
-    grid-template-columns: 1fr;
-  }
 
   .features {
     flex-direction: column;
@@ -806,10 +800,6 @@ section {
 
   .product-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .products {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .arrows {
@@ -826,7 +816,7 @@ section {
   }
 
   h2 {
-    font-size: 1.20rem;
+    font-size: 1.20rem !important;
   }
 
   p {
@@ -840,6 +830,10 @@ section {
 
 
 @media (max-width: 480px) {
+  .new-arrival .arrival-container {
+    grid-template-columns: auto;
+  }
+
   .main-banner {
     flex-direction: column;
   }
@@ -866,7 +860,7 @@ section {
   }
 
   h2 {
-    font-size: 1.115rem;
+    font-size: 1.115rem !important;
   }
 
   h3 {

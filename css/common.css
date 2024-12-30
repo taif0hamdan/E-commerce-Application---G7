@@ -1,7 +1,7 @@
 * {
     /* CSS HEX */
     --platinum: rgb(241, 241, 241);
-    --timberwolf: #ced0ceff;
+    --timberwolf: #e5e5e5;
     --flame: #cf5c36ff;
     --space-cadet: #283044ff;
     --onyx: #3f403fff;
@@ -154,6 +154,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Breadcrumb styles */
