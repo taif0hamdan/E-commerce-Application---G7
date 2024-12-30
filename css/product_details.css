@@ -1,5 +1,5 @@
 @import "common.css";
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 
 .path {
   margin-bottom: 2%;
@@ -46,7 +46,6 @@
   align-content: space-between;
 }
 
-/* Carousel Navigation CSS */
 .main_img {
   grid-area: main_img;
   width: 100%;
@@ -57,10 +56,8 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  /* Needed for arrow positioning */
 }
 
-/* Left Arrow */
 .fa-chevron-left {
   position: absolute;
   left: 10px;
@@ -75,10 +72,8 @@
 
 .fa-chevron-left:hover {
   color: var(--flame);
-  /* Highlight color */
 }
 
-/* Right Arrow */
 .fa-chevron-right {
   position: absolute;
   right: 10px;
@@ -93,10 +88,8 @@
 
 .fa-chevron-right:hover {
   color: var(--flame);
-  /* Highlight color */
 }
 
-/* Images in the Carousel */
 .main_img img {
   width: 100%;
   display: block;
@@ -106,17 +99,22 @@
 .first_img {
   grid-area: first_img;
   background-color: var(--timberwolf);
-
+  align-self: start;
+  justify-self: start;
 }
 
 .second_img {
   grid-area: second_img;
   background-color: var(--timberwolf);
+  align-self: center;
+  justify-self: start;
 }
 
 .third_img {
   grid-area: third_img;
   background-color: var(--timberwolf);
+  align-self: end;
+  justify-self: start;
 }
 
 .info {
@@ -168,7 +166,6 @@ h1 {
 .color-options {
   display: flex;
   align-content: center;
-
 }
 
 .choice {
@@ -194,7 +191,6 @@ h1 {
 .color-btn.selected {
   outline: 2px solid #000000;
   padding: 0;
-
 }
 
 .quantity-btn {
@@ -210,14 +206,13 @@ h1 {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-
 }
 
 .delivery-info {
   margin-top: 20px;
 
   padding: 2% 7%;
-  border: #000000 solid 1PX;
+  border: #000000 solid 1px;
 }
 
 .delivery-info p {
@@ -236,7 +231,6 @@ h1 {
 .buy-now,
 .quantity {
   width: 30%;
-
 }
 
 .same_line2 {
@@ -257,9 +251,7 @@ h1 {
 }
 
 h3.flame_color {
-
   margin-left: 3%;
-
 }
 
 .product-grid {
@@ -286,7 +278,6 @@ h3.flame_color {
   position: relative;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .product-card:hover {
@@ -387,4 +378,100 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    gap: 1em 3em;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "main_img main_img main_img info"
+      "main_img  main_img main_img info"
+      "first_img second_img third_img info";
+    width: 85%;
+
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .main_img {
+    grid-area: main_img;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--timberwolf);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .fa-chevron-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: #555;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-chevron-left:hover {
+    color: var(--flame);
+  }
+
+  .fa-chevron-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: #555;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-chevron-right:hover {
+    color: var(--flame);
+  }
+
+  .main_img img {
+    width: 100%;
+
+    display: block;
+    object-fit: contain;
+  }
+
+  .first_img {
+    grid-area: first_img;
+    background-color: var(--timberwolf);
+
+    align-self: start;
+    justify-self: start;
+  }
+
+  .second_img {
+    grid-area: second_img;
+    background-color: var(--timberwolf);
+    align-self: start;
+    justify-self: start;
+  }
+
+  .third_img {
+    grid-area: third_img;
+    background-color: var(--timberwolf);
+    align-self: start;
+    justify-self: start;
+  }
+  .info {
+    grid-area: info;
+  }
 }

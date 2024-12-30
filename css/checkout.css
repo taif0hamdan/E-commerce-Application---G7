@@ -187,4 +187,8 @@ input[type="radio"]:focus {
   .container {
     grid-template-columns: auto
   }
+  .order-summary {
+    border-left: none;
+  }
+  
 }
