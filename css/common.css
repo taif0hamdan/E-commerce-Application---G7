@@ -1,6 +1,6 @@
 * {
     /* CSS HEX */
-    --platinum: #e6e8e6ff;
+    --platinum: rgb(241, 241, 241);
     --timberwolf: #ced0ceff;
     --flame: #cf5c36ff;
     --space-cadet: #283044ff;
@@ -14,7 +14,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--platinum);
+    background-color: rgb(241, 241, 241);
     color: var(--onyx);
     line-height: 1.6;
 }
@@ -102,9 +102,7 @@ header img {
     color: var(--flame);
 }
 
-nav ul:hover {
-    gap: 50px;
-}
+
 
 .search {
     display: flex;
