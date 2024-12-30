@@ -1,20 +1,8 @@
+@import 'common.css';
+
 :root {
-    --primary-color: #e74c3c;
-    --secondary-color: #333;
-    --background-color: #e6e8e6ff;
-    --text-color: #000;
-    --font-family: 'Arial, sans-serif';
     --border-radius: 8px;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-}
-
-
 
 /* Login Form specific styles */
 .container {
@@ -83,7 +71,7 @@ input:focus {
 
 .login-btn {
     padding: 12px 40px;
-    background-color: var(--primary-color);
+    background-color: var(--flame);
     color: white;
     border: none;
     border-radius: var(--border-radius);
@@ -127,11 +115,11 @@ input:focus {
         flex-direction: column;
         padding: 20px;
     }
-    
+
     .image-section {
         display: none;
     }
-    
+
     .form-section {
         padding: 24px;
         margin-left: 0;
@@ -146,5 +134,5 @@ input:focus {
         width: 100%;
     }
 
-    
+
 }

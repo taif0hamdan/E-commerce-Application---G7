@@ -1,19 +1,8 @@
+@import 'common.css';
+
 :root {
-    --primary-color: #e74c3c;
-    --secondary-color: #333;
-    --background-color: #e6e8e6ff;
-    --text-color: #000;
-    --font-family: 'Arial, sans-serif';
     --border-radius: 8px;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-}
-
 
 /* Registration Form styles */
 .container {
@@ -48,7 +37,7 @@
 h1 {
     font-size: 24px;
     margin-bottom: 8px;
-    color: var(--secondary-color);
+    color: var(--onyx);
 }
 
 .form-section p {
@@ -70,13 +59,13 @@ input {
 
 input:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: var(--flame);
 }
 
 .create-account-btn {
     width: 100%;
     padding: 12px;
-    background-color: var(--primary-color);
+    background-color: var(--flame);
     color: white;
     border: none;
     border-radius: var(--border-radius);
@@ -115,7 +104,7 @@ input:focus {
 }
 
 .login-text a {
-    color: var(--primary-color);
+    color: var(--flame);
     text-decoration: none;
     font-weight: bold;
 }
@@ -126,11 +115,11 @@ input:focus {
         flex-direction: column;
         padding: 20px;
     }
-    
+
     .image-section {
         display: none;
     }
-    
+
     .form-section {
         padding: 24px;
         margin-left: 0;
