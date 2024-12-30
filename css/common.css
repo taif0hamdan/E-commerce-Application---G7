@@ -10,11 +10,17 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(241, 241, 241);
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--platinum);
     color: var(--onyx);
     line-height: 1.6;
 }
@@ -39,6 +45,7 @@ input:focus {
     font-size: 14px;
     letter-spacing: 1px;
     padding-left: 30%;
+    flex-wrap: wrap;
 }
 
 .top-banner p {
@@ -67,6 +74,7 @@ input:focus {
     background-color: var(--platinum);
     padding: 35px 100px 20px;
     border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
 }
 
 header img {
@@ -236,14 +244,15 @@ header img {
     margin-top: 1rem;
     border: 1px solid var(--platinum);
     border-radius: 5px;
+    width: fit-content;
 }
 
 .subscribe-box input {
     padding: 0.5rem;
-    flex: 1;
     background: var(--space-cadet);
     color: var(--platinum);
     border-color: var(--space-cadet);
+    border: 1px;
 }
 
 .subscribe-box button {
@@ -305,4 +314,100 @@ header img {
     padding-top: 1rem;
     color: var(--timberwolf);
     font-weight: lighter;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 20px 20px;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: fit-content;
+    }
+
+    .top-banner {
+        padding-left: 15%;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .subscribe-box input {
+        font-size: 0.8rem;
+    }
+
+    .subscribe-box input {
+        width: 80%;
+    }
+
+    .footer-column h3 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .top-banner {
+        padding-left: 0px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        width: 80%
+    }
+
+    .search-bar input {
+        width: 80%
+    }
+
+    .search-bar .icon {
+        width: 20%
+    }
+
+    .breadcrumb {
+        padding-left: 50px;
+    }
+
+    .footer-container {
+        padding: 1.5rem;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .subscribe-box {
+        width: 80%;
+    }
+
+    .subscribe-box input {
+        width: 80%;
+    }
+
+    .subscribe-box button {
+        width: 20%;
+    }
+
+    .subscribe-box input {
+        padding: 0.4rem;
+    }
+
+    .subscribe-box button {
+        padding: 0.4rem 0.4rem;
+    }
 }
